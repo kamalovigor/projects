@@ -1,10 +1,5 @@
 'use strict'
-/* var log4js = require('log4js')
-log4js.configure({
-  appenders: { log: { type: 'file', filename: 'prefetcher/log/logfile.log' } },
-  categories: { default: { appenders: ['log'], level: 'error' } }
-})
-const logger = log4js.getLogger('log') */
+
 var log4js = require('log4js')
 log4js.configure({
   appenders: { 'out': { type: 'stdout' } },
@@ -14,7 +9,6 @@ var logger = log4js.getLogger('log')
 logger.level = 'debug'
 
 const net = require('net')
-const carrier = require('carrier')
 const PORT = 47000
 const HOST = 'localhost'
 
